@@ -20,6 +20,8 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(3000, () => {
-    console.log('listening on port 3000')
+server.listen(81, '0.0.0.0', () => {
+    console.log('listening on port 81')
 })
+
+app.use(express.static("public"));

@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App chat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>WebChat NonRSA</title>
 </head>
 <body>
+    <div class="container">
 
-
-    <h1>App Chat</h1>
-
+        <div class="header">
+            <h1>WebChat NonRSA</h1>
+</div>
+<div class="body">
     <ul id="messages"></ul>
+</div>
 
+<div class="footer">
     <form id="chat-form">
         <input type="text" id="chat-mes">
         <button id="send-chat">Send</button>
     </form>
-
+</div>
+</div>
 </body>
 
 <script src="/socket.io/socket.io.js"></script>
